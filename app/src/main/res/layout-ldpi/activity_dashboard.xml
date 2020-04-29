@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:padding="10dp"
+    android:background="@drawable/bg"
+    android:gravity="center"
+    android:id="@+id/ll"
+    tools:context=".Dashboard" >
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:padding="10dp"
+                    android:text="DevSpot"
+                    android:textSize="60sp"
+                    android:textColor="#fff"
+                    android:gravity="center"
+                    android:fontFamily="cursive"
+                        >
+
+
+                </TextView>
+
+
+
+
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:id="@+id/about"
+                    android:layout_width="150dp"
+                    android:layout_height="160dp"
+                    android:layout_margin="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                                <ImageView
+                                    android:layout_width="64dp"
+                                    android:layout_height="64dp"
+                                    android:background="@drawable/circlebackgroundpink"
+                                    android:src="@drawable/ic_face_black_24dp"
+                                    android:padding="10dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="10dp"
+                                    android:text="About"/>
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/lightgray"
+                                    android:layout_margin="10dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="About DevSpot"
+                                    android:padding="5dp"
+                                    android:textColor="@android:color/darker_gray"/>
+
+                        </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:id="@+id/qrScanner"
+                    android:layout_width="150dp"
+                    android:layout_height="160dp"
+                    android:layout_margin="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                                <ImageView
+                                    android:layout_width="64dp"
+                                    android:layout_height="64dp"
+                                    android:background="@drawable/circlebackgroundpurple"
+                                    android:src="@drawable/ic_photo_camera_black_24dp"
+                                    android:padding="10dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Scan"/>
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/lightgray"
+                                    android:layout_margin="10dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="QR Codes"
+                                    android:padding="5dp"
+                                    android:textColor="@android:color/darker_gray"/>
+
+                        </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:id="@+id/books"
+                    android:layout_width="150dp"
+                    android:layout_height="160dp"
+                    android:layout_margin="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                                <ImageView
+                                    android:layout_width="64dp"
+                                    android:layout_height="64dp"
+                                    android:background="@drawable/circlebackgroundgreen"
+                                    android:src="@drawable/ic_collections_bookmark_black_24dp"
+                                    android:padding="10dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Books"/>
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/lightgray"
+                                    android:layout_margin="10dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Study as you wish"
+                                    android:padding="5dp"
+                                    android:textColor="@android:color/darker_gray"/>
+
+                        </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/events"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+
+                    android:layout_width="150dp"
+                    android:layout_height="160dp"
+                    android:layout_margin="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                                <ImageView
+                                    android:layout_width="64dp"
+                                    android:layout_height="64dp"
+                                    android:background="@drawable/circlebackgroundyello"
+                                    android:src="@drawable/ic_event_black_24dp"
+                                    android:padding="10dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Events"/>
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/lightgray"
+                                    android:layout_margin="10dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Check in into Events"
+                                    android:padding="5dp"
+                                    android:textColor="@android:color/darker_gray"/>
+
+                        </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+
+            >
+
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:id="@+id/logout"
+                    android:layout_width="320dp"
+                    android:layout_height="120dp"
+
+                    >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                                <ImageView
+                                    android:layout_width="64dp"
+                                    android:layout_height="64dp"
+                                    android:background="@drawable/circlebackgroundblue"
+                                    android:src="@drawable/ic_vpn_key_black_24dp"
+                                    android:padding="10dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Logout"/>
+
+
+                        </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

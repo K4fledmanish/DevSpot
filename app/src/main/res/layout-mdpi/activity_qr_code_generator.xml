@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QrCodeGenerator"
+    android:background="@drawable/bg"
+    android:padding="30dp"
+    >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAlignment="center"
+        android:text="DevSpot"
+        android:fontFamily="cursive"
+        android:textColor="#fff"
+        android:textSize="60dp"
+        android:padding="20dp"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="200dp"
+    >
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etInput"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:hint="Enter your name"
+        android:layout_centerHorizontal="true"
+
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCreateQr"
+        android:text="Get Ticket"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/etInput"
+        />
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnCreateQr"
+        />
+
+
+
+    <Button
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        android:text="Save to Files"
+        android:id="@+id/btnSave"
+        android:layout_marginTop="15dp"
+
+  />
+
+</LinearLayout>
+
+
+
+
+</RelativeLayout>
